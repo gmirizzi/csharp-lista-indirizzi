@@ -1,4 +1,7 @@
-﻿StreamReader file = File.OpenText("C:\\Users\\Giuseppe Mirizzi\\source\\repos\\csharp-lista-indirizzi\\ListaIndirizzi\\addresses.csv");
+﻿List<Indirizzo> addressesList = new List<Indirizzo>();
+
+//Aperutra file con indirizzi
+StreamReader file = File.OpenText("C:\\Users\\Giuseppe Mirizzi\\source\\repos\\csharp-lista-indirizzi\\ListaIndirizzi\\addresses.csv");
 
 while (!file.EndOfStream)
 {
