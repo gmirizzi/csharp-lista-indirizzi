@@ -11,6 +11,10 @@ while (!file.EndOfStream)
     {
         string riga=file.ReadLine();
         string[] arrData = riga.Split(",");
+        if (arrData[2]=="" || arrData[3]=="")
+        {
+            throw new ArgumentNullException();
+        }
         Indirizzo address = new Indirizzo(arrData[2], arrData[3]);
         address.SetProvince(arrData[4]);
         address.SetZip(arrData[5]);
